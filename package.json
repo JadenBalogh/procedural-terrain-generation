@@ -1,0 +1,23 @@
+{
+  "name": "procedural-terrain-generation",
+  "version": "1.0.0",
+  "description": "A simple procedural terrain generation algorithm using the Phaser game engine and Perlin noise.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JadenBalogh/procedural-terrain-generation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JadenBalogh/procedural-terrain-generation/issues"
+  },
+  "homepage": "https://github.com/JadenBalogh/procedural-terrain-generation#readme",
+  "dependencies": {
+    "http-server": "^0.12.1",
+    "phaser": "^3.22.0"
+  }
+}

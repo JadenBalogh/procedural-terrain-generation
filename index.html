@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
+</head>
+<body>
+
+<script>
+  var config = {
+    type: Phaser.AUTO,
+    parent: 'phaser-example',
+    width: 800,
+    height: 600,
+    physics: {
+      default: 'arcade',
+      arcade: {
+          gravity: { y: 200 }
+      }
+    },
+    scene: {
+      preload: preload,
+      create: create
+    }
+  };
+
+  var game = new Phaser.Game(config);
+
+  function preload()
+  {
+    this.load.image('square', 'assets/Square.png');
+  }
+
+  function create()
+  {
+    var w = this.game.canvas.width;
+    var h = this.game.canvas.height;
+    var e1 = this.add.ellipse(w / 2, h / 2, 100, 100, 0x6666ff);
+    this.physics.add.collider()
+    var boxes = this.physics.add.staticGroup();
+    boxes.create(100, 100, 'square');
+
+  }
+</script>
+
+</body>
+</html>
