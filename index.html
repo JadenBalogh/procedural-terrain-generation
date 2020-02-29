@@ -77,6 +77,10 @@
         bullet.setVelocityX(500);
       }
     }, this);
+
+    var SimplexNoise = require('simplex-noise');
+    var simplex = new SimplexNoise();
+    console.log(simplex.noise2D(2, 2));
   }
 
   function bulletCollide(box, bullet)
