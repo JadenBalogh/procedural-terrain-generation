@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/JadenBalogh/procedural-terrain-generation#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "http-server": "^0.12.1",
     "phaser": "^3.22.0",
     "simplex-noise": "^2.4.0"

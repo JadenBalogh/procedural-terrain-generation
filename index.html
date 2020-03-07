@@ -28,10 +28,10 @@
 
   function preload()
   {
-    this.load.image('square', 'assets/Square.png');
-    this.load.image('player', 'assets/Player.png');
-    this.load.image('bullet', 'assets/Bullet.png');
-    this.load.image('background', 'assets/Background.png');
+    this.load.image('square', 'Square.png');
+    this.load.image('player', 'Player.png');
+    this.load.image('bullet', 'Bullet.png');
+    this.load.image('background', 'Background.png');
   }
 
   function create()
@@ -77,10 +77,6 @@
         bullet.setVelocityX(500);
       }
     }, this);
-
-    var SimplexNoise = require('simplex-noise');
-    var simplex = new SimplexNoise();
-    console.log(simplex.noise2D(2, 2));
   }
 
   function bulletCollide(box, bullet)
